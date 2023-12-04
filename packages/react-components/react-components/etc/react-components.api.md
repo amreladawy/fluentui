@@ -86,6 +86,28 @@ import { Body2 } from '@fluentui/react-text';
 import { body2ClassNames } from '@fluentui/react-text';
 import { BorderRadiusTokens } from '@fluentui/react-theme';
 import { BrandVariants } from '@fluentui/react-theme';
+import { Breadcrumb } from '@fluentui/react-breadcrumb';
+import { BreadcrumbButton } from '@fluentui/react-breadcrumb';
+import { breadcrumbButtonClassNames } from '@fluentui/react-breadcrumb';
+import { BreadcrumbButtonProps } from '@fluentui/react-breadcrumb';
+import { BreadcrumbButtonSlots } from '@fluentui/react-breadcrumb';
+import { BreadcrumbButtonState } from '@fluentui/react-breadcrumb';
+import { breadcrumbClassNames } from '@fluentui/react-breadcrumb';
+import { BreadcrumbContextValues } from '@fluentui/react-breadcrumb';
+import { BreadcrumbDivider } from '@fluentui/react-breadcrumb';
+import { breadcrumbDividerClassNames } from '@fluentui/react-breadcrumb';
+import { BreadcrumbDividerProps } from '@fluentui/react-breadcrumb';
+import { BreadcrumbDividerSlots } from '@fluentui/react-breadcrumb';
+import { BreadcrumbDividerState } from '@fluentui/react-breadcrumb';
+import { BreadcrumbItem } from '@fluentui/react-breadcrumb';
+import { breadcrumbItemClassNames } from '@fluentui/react-breadcrumb';
+import { BreadcrumbItemProps } from '@fluentui/react-breadcrumb';
+import { BreadcrumbItemSlots } from '@fluentui/react-breadcrumb';
+import { BreadcrumbItemState } from '@fluentui/react-breadcrumb';
+import { BreadcrumbProps } from '@fluentui/react-breadcrumb';
+import { BreadcrumbProvider } from '@fluentui/react-breadcrumb';
+import { BreadcrumbSlots } from '@fluentui/react-breadcrumb';
+import { BreadcrumbState } from '@fluentui/react-breadcrumb';
 import { Button } from '@fluentui/react-button';
 import { buttonClassNames } from '@fluentui/react-button';
 import { ButtonProps } from '@fluentui/react-button';
@@ -236,6 +258,7 @@ import { DialogState } from '@fluentui/react-dialog';
 import { DialogSurface } from '@fluentui/react-dialog';
 import { dialogSurfaceClassNames } from '@fluentui/react-dialog';
 import { DialogSurfaceContextValue } from '@fluentui/react-dialog';
+import { DialogSurfaceContextValues } from '@fluentui/react-dialog';
 import { DialogSurfaceProps } from '@fluentui/react-dialog';
 import { DialogSurfaceSlots } from '@fluentui/react-dialog';
 import { DialogSurfaceState } from '@fluentui/react-dialog';
@@ -256,6 +279,35 @@ import { dividerClassNames } from '@fluentui/react-divider';
 import { DividerProps } from '@fluentui/react-divider';
 import { DividerSlots } from '@fluentui/react-divider';
 import { DividerState } from '@fluentui/react-divider';
+import { Drawer } from '@fluentui/react-drawer';
+import { DrawerBody } from '@fluentui/react-drawer';
+import { drawerBodyClassNames } from '@fluentui/react-drawer';
+import { DrawerBodyProps } from '@fluentui/react-drawer';
+import { DrawerBodySlots } from '@fluentui/react-drawer';
+import { DrawerBodyState } from '@fluentui/react-drawer';
+import { DrawerFooter } from '@fluentui/react-drawer';
+import { drawerFooterClassNames } from '@fluentui/react-drawer';
+import { DrawerFooterProps } from '@fluentui/react-drawer';
+import { DrawerFooterSlots } from '@fluentui/react-drawer';
+import { DrawerFooterState } from '@fluentui/react-drawer';
+import { DrawerHeader } from '@fluentui/react-drawer';
+import { drawerHeaderClassNames } from '@fluentui/react-drawer';
+import { DrawerHeaderNavigation } from '@fluentui/react-drawer';
+import { drawerHeaderNavigationClassNames } from '@fluentui/react-drawer';
+import { DrawerHeaderNavigationProps } from '@fluentui/react-drawer';
+import { DrawerHeaderNavigationSlots } from '@fluentui/react-drawer';
+import { DrawerHeaderNavigationState } from '@fluentui/react-drawer';
+import { DrawerHeaderProps } from '@fluentui/react-drawer';
+import { DrawerHeaderSlots } from '@fluentui/react-drawer';
+import { DrawerHeaderState } from '@fluentui/react-drawer';
+import { DrawerHeaderTitle } from '@fluentui/react-drawer';
+import { drawerHeaderTitleClassNames } from '@fluentui/react-drawer';
+import { DrawerHeaderTitleProps } from '@fluentui/react-drawer';
+import { DrawerHeaderTitleSlots } from '@fluentui/react-drawer';
+import { DrawerHeaderTitleState } from '@fluentui/react-drawer';
+import { DrawerProps } from '@fluentui/react-drawer';
+import { DrawerSlots } from '@fluentui/react-drawer';
+import { DrawerState } from '@fluentui/react-drawer';
 import { Dropdown } from '@fluentui/react-combobox';
 import { dropdownClassNames } from '@fluentui/react-combobox';
 import { DropdownContextValues } from '@fluentui/react-combobox';
@@ -313,12 +365,39 @@ import { imageClassNames } from '@fluentui/react-image';
 import { ImageProps } from '@fluentui/react-image';
 import { ImageSlots } from '@fluentui/react-image';
 import { ImageState } from '@fluentui/react-image';
+import { InfoLabel } from '@fluentui/react-infolabel';
+import { infoLabelClassNames } from '@fluentui/react-infolabel';
+import { InfoLabelProps } from '@fluentui/react-infolabel';
+import { InfoLabelSlots } from '@fluentui/react-infolabel';
+import { InfoLabelState } from '@fluentui/react-infolabel';
+import { InlineDrawer } from '@fluentui/react-drawer';
+import { inlineDrawerClassNames } from '@fluentui/react-drawer';
+import { InlineDrawerProps } from '@fluentui/react-drawer';
+import { InlineDrawerSlots } from '@fluentui/react-drawer';
+import { InlineDrawerState } from '@fluentui/react-drawer';
 import { Input } from '@fluentui/react-input';
 import { inputClassNames } from '@fluentui/react-input';
 import { InputOnChangeData } from '@fluentui/react-input';
 import { InputProps } from '@fluentui/react-input';
 import { InputSlots } from '@fluentui/react-input';
 import { InputState } from '@fluentui/react-input';
+import { InteractionTag } from '@fluentui/react-tags';
+import { interactionTagClassNames } from '@fluentui/react-tags';
+import { InteractionTagPrimary } from '@fluentui/react-tags';
+import { interactionTagPrimaryClassNames } from '@fluentui/react-tags';
+import { InteractionTagPrimaryContextValues } from '@fluentui/react-tags';
+import { InteractionTagPrimaryProps } from '@fluentui/react-tags';
+import { InteractionTagPrimarySlots } from '@fluentui/react-tags';
+import { InteractionTagPrimaryState } from '@fluentui/react-tags';
+import { InteractionTagProps } from '@fluentui/react-tags';
+import { InteractionTagSecondary } from '@fluentui/react-tags';
+import { interactionTagSecondaryClassNames } from '@fluentui/react-tags';
+import { InteractionTagSecondaryProps } from '@fluentui/react-tags';
+import { InteractionTagSecondarySlots } from '@fluentui/react-tags';
+import { InteractionTagSecondaryState } from '@fluentui/react-tags';
+import { InteractionTagSlots } from '@fluentui/react-tags';
+import { InteractionTagState } from '@fluentui/react-tags';
+import { isTruncatableBreadcrumbContent } from '@fluentui/react-breadcrumb';
 import { Label } from '@fluentui/react-label';
 import { labelClassNames } from '@fluentui/react-label';
 import { LabelProps } from '@fluentui/react-label';
@@ -423,7 +502,37 @@ import { MenuTriggerProps } from '@fluentui/react-menu';
 import { MenuTriggerState } from '@fluentui/react-menu';
 import { mergeCallbacks } from '@fluentui/react-utilities';
 import { mergeClasses } from '@griffel/react';
+import { MessageBar } from '@fluentui/react-message-bar';
+import { MessageBarActions } from '@fluentui/react-message-bar';
+import { messageBarActionsClassNames } from '@fluentui/react-message-bar';
+import { MessageBarActionsProps } from '@fluentui/react-message-bar';
+import { MessageBarActionsSlots } from '@fluentui/react-message-bar';
+import { MessageBarActionsState } from '@fluentui/react-message-bar';
+import { MessageBarBody } from '@fluentui/react-message-bar';
+import { messageBarBodyClassNames } from '@fluentui/react-message-bar';
+import { MessageBarBodyProps } from '@fluentui/react-message-bar';
+import { MessageBarBodySlots } from '@fluentui/react-message-bar';
+import { MessageBarBodyState } from '@fluentui/react-message-bar';
+import { messageBarClassNames } from '@fluentui/react-message-bar';
+import { MessageBarContextProvider } from '@fluentui/react-message-bar';
+import { MessageBarContextValue } from '@fluentui/react-message-bar';
+import { MessageBarGroup } from '@fluentui/react-message-bar';
+import { messageBarGroupClassNames } from '@fluentui/react-message-bar';
+import { MessageBarGroupProps } from '@fluentui/react-message-bar';
+import { MessageBarGroupSlots } from '@fluentui/react-message-bar';
+import { MessageBarGroupState } from '@fluentui/react-message-bar';
+import { MessageBarIntent } from '@fluentui/react-message-bar';
+import { MessageBarProps } from '@fluentui/react-message-bar';
+import { MessageBarSlots } from '@fluentui/react-message-bar';
+import { MessageBarState } from '@fluentui/react-message-bar';
+import { MessageBarTitle } from '@fluentui/react-message-bar';
+import { messageBarTitleClassNames } from '@fluentui/react-message-bar';
+import { MessageBarTitleProps } from '@fluentui/react-message-bar';
+import { MessageBarTitleSlots } from '@fluentui/react-message-bar';
+import { MessageBarTitleState } from '@fluentui/react-message-bar';
 import { OnOpenChangeData } from '@fluentui/react-popover';
+import { OnSelectionChangeCallback } from '@fluentui/react-utilities';
+import { OnSelectionChangeData } from '@fluentui/react-utilities';
 import { OnVisibleChangeData } from '@fluentui/react-tooltip';
 import { OpenPopoverEvents } from '@fluentui/react-popover';
 import { Option as Option_2 } from '@fluentui/react-combobox';
@@ -441,10 +550,18 @@ import { OverflowDivider } from '@fluentui/react-overflow';
 import { OverflowItem } from '@fluentui/react-overflow';
 import { OverflowItemProps } from '@fluentui/react-overflow';
 import { OverflowProps } from '@fluentui/react-overflow';
+import { OverlayDrawer } from '@fluentui/react-drawer';
+import { overlayDrawerClassNames } from '@fluentui/react-drawer';
+import { OverlayDrawerProps } from '@fluentui/react-drawer';
+import { OverlayDrawerSlots } from '@fluentui/react-drawer';
+import { OverlayDrawerState } from '@fluentui/react-drawer';
 import { PartialTheme } from '@fluentui/react-theme';
 import { PartitionAvatarGroupItems } from '@fluentui/react-avatar';
 import { partitionAvatarGroupItems } from '@fluentui/react-avatar';
 import { PartitionAvatarGroupItemsOptions } from '@fluentui/react-avatar';
+import { PartitionBreadcrumbItems } from '@fluentui/react-breadcrumb';
+import { partitionBreadcrumbItems } from '@fluentui/react-breadcrumb';
+import { PartitionBreadcrumbItemsOptions } from '@fluentui/react-breadcrumb';
 import { Persona } from '@fluentui/react-persona';
 import { personaClassNames } from '@fluentui/react-persona';
 import { PersonaProps } from '@fluentui/react-persona';
@@ -520,6 +637,10 @@ import { renderAvatarGroup_unstable } from '@fluentui/react-avatar';
 import { renderAvatarGroupItem_unstable } from '@fluentui/react-avatar';
 import { renderAvatarGroupPopover_unstable } from '@fluentui/react-avatar';
 import { renderBadge_unstable } from '@fluentui/react-badge';
+import { renderBreadcrumb_unstable } from '@fluentui/react-breadcrumb';
+import { renderBreadcrumbButton_unstable } from '@fluentui/react-breadcrumb';
+import { renderBreadcrumbDivider_unstable } from '@fluentui/react-breadcrumb';
+import { renderBreadcrumbItem_unstable } from '@fluentui/react-breadcrumb';
 import { renderButton_unstable } from '@fluentui/react-button';
 import { renderCard_unstable } from '@fluentui/react-card';
 import { renderCardFooter_unstable } from '@fluentui/react-card';
@@ -543,13 +664,24 @@ import { renderDialogSurface_unstable } from '@fluentui/react-dialog';
 import { renderDialogTitle_unstable } from '@fluentui/react-dialog';
 import { renderDialogTrigger_unstable } from '@fluentui/react-dialog';
 import { renderDivider_unstable } from '@fluentui/react-divider';
+import { renderDrawer_unstable } from '@fluentui/react-drawer';
+import { renderDrawerBody_unstable } from '@fluentui/react-drawer';
+import { renderDrawerFooter_unstable } from '@fluentui/react-drawer';
+import { renderDrawerHeader_unstable } from '@fluentui/react-drawer';
+import { renderDrawerHeaderNavigation_unstable } from '@fluentui/react-drawer';
+import { renderDrawerHeaderTitle_unstable } from '@fluentui/react-drawer';
 import { renderDropdown_unstable } from '@fluentui/react-combobox';
 import { RendererProvider } from '@griffel/react';
 import { renderField_unstable } from '@fluentui/react-field';
 import { renderFlatTree_unstable } from '@fluentui/react-tree';
 import { renderFluentProvider_unstable } from '@fluentui/react-provider';
 import { renderImage_unstable } from '@fluentui/react-image';
+import { renderInfoLabel_unstable } from '@fluentui/react-infolabel';
+import { renderInlineDrawer_unstable } from '@fluentui/react-drawer';
 import { renderInput_unstable } from '@fluentui/react-input';
+import { renderInteractionTag_unstable } from '@fluentui/react-tags';
+import { renderInteractionTagPrimary_unstable } from '@fluentui/react-tags';
+import { renderInteractionTagSecondary_unstable } from '@fluentui/react-tags';
 import { renderLabel_unstable } from '@fluentui/react-label';
 import { renderLink_unstable } from '@fluentui/react-link';
 import { renderListbox_unstable } from '@fluentui/react-combobox';
@@ -566,8 +698,14 @@ import { renderMenuList_unstable } from '@fluentui/react-menu';
 import { renderMenuPopover_unstable } from '@fluentui/react-menu';
 import { renderMenuSplitGroup_unstable } from '@fluentui/react-menu';
 import { renderMenuTrigger_unstable } from '@fluentui/react-menu';
+import { renderMessageBar_unstable } from '@fluentui/react-message-bar';
+import { renderMessageBarActions_unstable } from '@fluentui/react-message-bar';
+import { renderMessageBarBody_unstable } from '@fluentui/react-message-bar';
+import { renderMessageBarGroup_unstable } from '@fluentui/react-message-bar';
+import { renderMessageBarTitle_unstable } from '@fluentui/react-message-bar';
 import { renderOption_unstable } from '@fluentui/react-combobox';
 import { renderOptionGroup_unstable } from '@fluentui/react-combobox';
+import { renderOverlayDrawer_unstable } from '@fluentui/react-drawer';
 import { renderPersona_unstable } from '@fluentui/react-persona';
 import { renderPopover_unstable } from '@fluentui/react-popover';
 import { renderPopoverSurface_unstable } from '@fluentui/react-popover';
@@ -596,6 +734,8 @@ import { renderTableResizeHandle_unstable } from '@fluentui/react-table';
 import { renderTableRow_unstable } from '@fluentui/react-table';
 import { renderTableSelectionCell_unstable } from '@fluentui/react-table';
 import { renderTabList_unstable } from '@fluentui/react-tabs';
+import { renderTag_unstable } from '@fluentui/react-tags';
+import { renderTagGroup_unstable } from '@fluentui/react-tags';
 import { renderText_unstable } from '@fluentui/react-text';
 import { renderTextarea_unstable } from '@fluentui/react-textarea';
 import { renderToast_unstable } from '@fluentui/react-toast';
@@ -621,6 +761,10 @@ import { ResolveShorthandOptions } from '@fluentui/react-utilities';
 import { Select } from '@fluentui/react-select';
 import { SelectableHandler } from '@fluentui/react-menu';
 import { selectClassNames } from '@fluentui/react-select';
+import { SelectionHookParams } from '@fluentui/react-utilities';
+import { SelectionItemId } from '@fluentui/react-utilities';
+import { SelectionMethods } from '@fluentui/react-utilities';
+import { SelectionMode as SelectionMode_2 } from '@fluentui/react-utilities';
 import { SelectOnChangeData } from '@fluentui/react-select';
 import { SelectProps } from '@fluentui/react-select';
 import { SelectSlots } from '@fluentui/react-select';
@@ -775,6 +919,23 @@ import { TabRegisterData } from '@fluentui/react-tabs';
 import { TabSlots } from '@fluentui/react-tabs';
 import { TabState } from '@fluentui/react-tabs';
 import { TabValue } from '@fluentui/react-tabs';
+import { Tag } from '@fluentui/react-tags';
+import { TagAppearance } from '@fluentui/react-tags';
+import { tagClassNames } from '@fluentui/react-tags';
+import { TagDismissData } from '@fluentui/react-tags';
+import { TagDismissEvent } from '@fluentui/react-tags';
+import { TagDismissHandler } from '@fluentui/react-tags';
+import { TagGroup } from '@fluentui/react-tags';
+import { tagGroupClassNames } from '@fluentui/react-tags';
+import { TagGroupProps } from '@fluentui/react-tags';
+import { TagGroupSlots } from '@fluentui/react-tags';
+import { TagGroupState } from '@fluentui/react-tags';
+import { TagProps } from '@fluentui/react-tags';
+import { TagShape } from '@fluentui/react-tags';
+import { TagSize } from '@fluentui/react-tags';
+import { TagSlots } from '@fluentui/react-tags';
+import { TagState } from '@fluentui/react-tags';
+import { TagValue } from '@fluentui/react-tags';
 import { teamsDarkTheme } from '@fluentui/react-theme';
 import { teamsHighContrastTheme } from '@fluentui/react-theme';
 import { teamsLightTheme } from '@fluentui/react-theme';
@@ -837,6 +998,7 @@ import { toggleButtonClassNames } from '@fluentui/react-button';
 import { ToggleButtonProps } from '@fluentui/react-button';
 import { ToggleButtonState } from '@fluentui/react-button';
 import { tokens } from '@fluentui/react-theme';
+import { toMountNodeProps } from '@fluentui/react-portal';
 import { Toolbar } from '@fluentui/react-toolbar';
 import { ToolbarButton } from '@fluentui/react-toolbar';
 import { ToolbarButtonProps } from '@fluentui/react-toolbar';
@@ -905,6 +1067,8 @@ import { TreeProvider } from '@fluentui/react-tree';
 import { TreeSelectionValue } from '@fluentui/react-tree';
 import { TreeSlots } from '@fluentui/react-tree';
 import { TreeState } from '@fluentui/react-tree';
+import { truncateBreadcrumbLongName } from '@fluentui/react-breadcrumb';
+import { truncateBreadcrumLongTooltip } from '@fluentui/react-breadcrumb';
 import { TypographyStyle } from '@fluentui/react-theme';
 import { TypographyStyles } from '@fluentui/react-theme';
 import { typographyStyles } from '@fluentui/react-theme';
@@ -936,6 +1100,15 @@ import { useAvatarGroupStyles_unstable } from '@fluentui/react-avatar';
 import { useAvatarStyles_unstable } from '@fluentui/react-avatar';
 import { useBadge_unstable } from '@fluentui/react-badge';
 import { useBadgeStyles_unstable } from '@fluentui/react-badge';
+import { useBreadcrumb_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbButton_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbButtonStyles_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbContext_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbDivider_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbDividerStyles_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbItem_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbItemStyles_unstable } from '@fluentui/react-breadcrumb';
+import { useBreadcrumbStyles_unstable } from '@fluentui/react-breadcrumb';
 import { useButton_unstable } from '@fluentui/react-button';
 import { useButtonStyles_unstable } from '@fluentui/react-button';
 import { useCard_unstable } from '@fluentui/react-card';
@@ -983,12 +1156,25 @@ import { useDialogContentStyles_unstable } from '@fluentui/react-dialog';
 import { useDialogContext_unstable } from '@fluentui/react-dialog';
 import { useDialogSurface_unstable } from '@fluentui/react-dialog';
 import { useDialogSurfaceContext_unstable } from '@fluentui/react-dialog';
+import { useDialogSurfaceContextValues_unstable } from '@fluentui/react-dialog';
 import { useDialogSurfaceStyles_unstable } from '@fluentui/react-dialog';
 import { useDialogTitle_unstable } from '@fluentui/react-dialog';
 import { useDialogTitleStyles_unstable } from '@fluentui/react-dialog';
 import { useDialogTrigger_unstable } from '@fluentui/react-dialog';
 import { useDivider_unstable } from '@fluentui/react-divider';
 import { useDividerStyles_unstable } from '@fluentui/react-divider';
+import { useDrawer_unstable } from '@fluentui/react-drawer';
+import { useDrawerBody_unstable } from '@fluentui/react-drawer';
+import { useDrawerBodyStyles_unstable } from '@fluentui/react-drawer';
+import { useDrawerFooter_unstable } from '@fluentui/react-drawer';
+import { useDrawerFooterStyles_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeader_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeaderNavigation_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeaderNavigationStyles_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeaderStyles_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeaderTitle_unstable } from '@fluentui/react-drawer';
+import { useDrawerHeaderTitleStyles_unstable } from '@fluentui/react-drawer';
+import { useDrawerStyles_unstable } from '@fluentui/react-drawer';
 import { useDropdown_unstable } from '@fluentui/react-combobox';
 import { useDropdownStyles_unstable } from '@fluentui/react-combobox';
 import { useEventCallback } from '@fluentui/react-utilities';
@@ -1009,13 +1195,25 @@ import { useFocusableGroup } from '@fluentui/react-tabster';
 import { UseFocusableGroupOptions } from '@fluentui/react-tabster';
 import { useFocusFinders } from '@fluentui/react-tabster';
 import { useFocusObserved } from '@fluentui/react-tabster';
+import { useFocusVisible } from '@fluentui/react-tabster';
 import { useFocusWithin } from '@fluentui/react-tabster';
 import { useHeadlessFlatTree_unstable } from '@fluentui/react-tree';
 import { useId } from '@fluentui/react-utilities';
 import { useImage_unstable } from '@fluentui/react-image';
 import { useImageStyles_unstable } from '@fluentui/react-image';
+import { useInfoLabel_unstable } from '@fluentui/react-infolabel';
+import { useInfoLabelStyles_unstable } from '@fluentui/react-infolabel';
+import { useInlineDrawer_unstable } from '@fluentui/react-drawer';
+import { useInlineDrawerStyles_unstable } from '@fluentui/react-drawer';
 import { useInput_unstable } from '@fluentui/react-input';
 import { useInputStyles_unstable } from '@fluentui/react-input';
+import { useInteractionTag_unstable } from '@fluentui/react-tags';
+import { useInteractionTagContextValues_unstable } from '@fluentui/react-tags';
+import { useInteractionTagPrimary_unstable } from '@fluentui/react-tags';
+import { useInteractionTagPrimaryStyles_unstable } from '@fluentui/react-tags';
+import { useInteractionTagSecondary_unstable } from '@fluentui/react-tags';
+import { useInteractionTagSecondaryStyles_unstable } from '@fluentui/react-tags';
+import { useInteractionTagStyles_unstable } from '@fluentui/react-tags';
 import { useIsInTableHeader } from '@fluentui/react-table';
 import { useIsomorphicLayoutEffect } from '@fluentui/react-utilities';
 import { useIsOverflowGroupVisible } from '@fluentui/react-overflow';
@@ -1062,6 +1260,17 @@ import { useMenuSplitGroupStyles_unstable } from '@fluentui/react-menu';
 import { useMenuTrigger_unstable } from '@fluentui/react-menu';
 import { useMenuTriggerContext_unstable } from '@fluentui/react-menu';
 import { useMergedRefs } from '@fluentui/react-utilities';
+import { useMessageBar_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarActions_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarActionsStyles_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarBody_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarBodyStyles_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarContext } from '@fluentui/react-message-bar';
+import { useMessageBarGroup_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarGroupStyles_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarStyles_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarTitle_unstable } from '@fluentui/react-message-bar';
+import { useMessageBarTitleStyles_unstable } from '@fluentui/react-message-bar';
 import { useModalAttributes } from '@fluentui/react-tabster';
 import { UseModalAttributesOptions } from '@fluentui/react-tabster';
 import { useObservedElement } from '@fluentui/react-tabster';
@@ -1071,6 +1280,9 @@ import { useOptionGroupStyles_unstable } from '@fluentui/react-combobox';
 import { useOptionStyles_unstable } from '@fluentui/react-combobox';
 import { useOverflowCount } from '@fluentui/react-overflow';
 import { useOverflowMenu } from '@fluentui/react-overflow';
+import { useOverflowVisibility } from '@fluentui/react-overflow';
+import { useOverlayDrawer_unstable } from '@fluentui/react-drawer';
+import { useOverlayDrawerStyles_unstable } from '@fluentui/react-drawer';
 import { usePersona_unstable } from '@fluentui/react-persona';
 import { usePersonaStyles_unstable } from '@fluentui/react-persona';
 import { usePopover_unstable } from '@fluentui/react-popover';
@@ -1095,6 +1307,7 @@ import { useRestoreFocusSource } from '@fluentui/react-tabster';
 import { useRestoreFocusTarget } from '@fluentui/react-tabster';
 import { useScrollbarWidth } from '@fluentui/react-utilities';
 import { useSelect_unstable } from '@fluentui/react-select';
+import { useSelection } from '@fluentui/react-utilities';
 import { useSelectStyles_unstable } from '@fluentui/react-select';
 import { useSkeleton_unstable } from '@fluentui/react-skeleton';
 import { useSkeletonContext } from '@fluentui/react-skeleton';
@@ -1147,6 +1360,12 @@ import { useTabListContext_unstable } from '@fluentui/react-tabs';
 import { useTabListContextValues_unstable } from '@fluentui/react-tabs';
 import { useTabListStyles_unstable } from '@fluentui/react-tabs';
 import { useTabStyles_unstable } from '@fluentui/react-tabs';
+import { useTag_unstable } from '@fluentui/react-tags';
+import { useTagAvatarContextValues_unstable } from '@fluentui/react-tags';
+import { useTagGroup_unstable } from '@fluentui/react-tags';
+import { useTagGroupContextValues_unstable } from '@fluentui/react-tags';
+import { useTagGroupStyles_unstable } from '@fluentui/react-tags';
+import { useTagStyles_unstable } from '@fluentui/react-tags';
 import { useText_unstable } from '@fluentui/react-text';
 import { useTextarea_unstable } from '@fluentui/react-textarea';
 import { useTextareaStyles_unstable } from '@fluentui/react-textarea';
@@ -1194,6 +1413,7 @@ import { useTreeItemPersonaLayout_unstable } from '@fluentui/react-tree';
 import { useTreeItemPersonaLayoutStyles_unstable } from '@fluentui/react-tree';
 import { useTreeItemStyles_unstable } from '@fluentui/react-tree';
 import { useTreeStyles_unstable } from '@fluentui/react-tree';
+import { useUncontrolledFocus } from '@fluentui/react-tabster';
 import { VerticalSpacingTokens } from '@fluentui/react-theme';
 import { webDarkTheme } from '@fluentui/react-theme';
 import { webLightTheme } from '@fluentui/react-theme';
@@ -1361,6 +1581,50 @@ export { body2ClassNames }
 export { BorderRadiusTokens }
 
 export { BrandVariants }
+
+export { Breadcrumb }
+
+export { BreadcrumbButton }
+
+export { breadcrumbButtonClassNames }
+
+export { BreadcrumbButtonProps }
+
+export { BreadcrumbButtonSlots }
+
+export { BreadcrumbButtonState }
+
+export { breadcrumbClassNames }
+
+export { BreadcrumbContextValues }
+
+export { BreadcrumbDivider }
+
+export { breadcrumbDividerClassNames }
+
+export { BreadcrumbDividerProps }
+
+export { BreadcrumbDividerSlots }
+
+export { BreadcrumbDividerState }
+
+export { BreadcrumbItem }
+
+export { breadcrumbItemClassNames }
+
+export { BreadcrumbItemProps }
+
+export { BreadcrumbItemSlots }
+
+export { BreadcrumbItemState }
+
+export { BreadcrumbProps }
+
+export { BreadcrumbProvider }
+
+export { BreadcrumbSlots }
+
+export { BreadcrumbState }
 
 export { Button }
 
@@ -1662,6 +1926,8 @@ export { dialogSurfaceClassNames }
 
 export { DialogSurfaceContextValue }
 
+export { DialogSurfaceContextValues }
+
 export { DialogSurfaceProps }
 
 export { DialogSurfaceSlots }
@@ -1701,6 +1967,64 @@ export { DividerProps }
 export { DividerSlots }
 
 export { DividerState }
+
+export { Drawer }
+
+export { DrawerBody }
+
+export { drawerBodyClassNames }
+
+export { DrawerBodyProps }
+
+export { DrawerBodySlots }
+
+export { DrawerBodyState }
+
+export { DrawerFooter }
+
+export { drawerFooterClassNames }
+
+export { DrawerFooterProps }
+
+export { DrawerFooterSlots }
+
+export { DrawerFooterState }
+
+export { DrawerHeader }
+
+export { drawerHeaderClassNames }
+
+export { DrawerHeaderNavigation }
+
+export { drawerHeaderNavigationClassNames }
+
+export { DrawerHeaderNavigationProps }
+
+export { DrawerHeaderNavigationSlots }
+
+export { DrawerHeaderNavigationState }
+
+export { DrawerHeaderProps }
+
+export { DrawerHeaderSlots }
+
+export { DrawerHeaderState }
+
+export { DrawerHeaderTitle }
+
+export { drawerHeaderTitleClassNames }
+
+export { DrawerHeaderTitleProps }
+
+export { DrawerHeaderTitleSlots }
+
+export { DrawerHeaderTitleState }
+
+export { DrawerProps }
+
+export { DrawerSlots }
+
+export { DrawerState }
 
 export { Dropdown }
 
@@ -1816,6 +2140,26 @@ export { ImageSlots }
 
 export { ImageState }
 
+export { InfoLabel }
+
+export { infoLabelClassNames }
+
+export { InfoLabelProps }
+
+export { InfoLabelSlots }
+
+export { InfoLabelState }
+
+export { InlineDrawer }
+
+export { inlineDrawerClassNames }
+
+export { InlineDrawerProps }
+
+export { InlineDrawerSlots }
+
+export { InlineDrawerState }
+
 export { Input }
 
 export { inputClassNames }
@@ -1827,6 +2171,40 @@ export { InputProps }
 export { InputSlots }
 
 export { InputState }
+
+export { InteractionTag }
+
+export { interactionTagClassNames }
+
+export { InteractionTagPrimary }
+
+export { interactionTagPrimaryClassNames }
+
+export { InteractionTagPrimaryContextValues }
+
+export { InteractionTagPrimaryProps }
+
+export { InteractionTagPrimarySlots }
+
+export { InteractionTagPrimaryState }
+
+export { InteractionTagProps }
+
+export { InteractionTagSecondary }
+
+export { interactionTagSecondaryClassNames }
+
+export { InteractionTagSecondaryProps }
+
+export { InteractionTagSecondarySlots }
+
+export { InteractionTagSecondaryState }
+
+export { InteractionTagSlots }
+
+export { InteractionTagState }
+
+export { isTruncatableBreadcrumbContent }
 
 export { Label }
 
@@ -2036,7 +2414,67 @@ export { mergeCallbacks }
 
 export { mergeClasses }
 
+export { MessageBar }
+
+export { MessageBarActions }
+
+export { messageBarActionsClassNames }
+
+export { MessageBarActionsProps }
+
+export { MessageBarActionsSlots }
+
+export { MessageBarActionsState }
+
+export { MessageBarBody }
+
+export { messageBarBodyClassNames }
+
+export { MessageBarBodyProps }
+
+export { MessageBarBodySlots }
+
+export { MessageBarBodyState }
+
+export { messageBarClassNames }
+
+export { MessageBarContextProvider }
+
+export { MessageBarContextValue }
+
+export { MessageBarGroup }
+
+export { messageBarGroupClassNames }
+
+export { MessageBarGroupProps }
+
+export { MessageBarGroupSlots }
+
+export { MessageBarGroupState }
+
+export { MessageBarIntent }
+
+export { MessageBarProps }
+
+export { MessageBarSlots }
+
+export { MessageBarState }
+
+export { MessageBarTitle }
+
+export { messageBarTitleClassNames }
+
+export { MessageBarTitleProps }
+
+export { MessageBarTitleSlots }
+
+export { MessageBarTitleState }
+
 export { OnOpenChangeData }
+
+export { OnSelectionChangeCallback }
+
+export { OnSelectionChangeData }
 
 export { OnVisibleChangeData }
 
@@ -2072,6 +2510,16 @@ export { OverflowItemProps }
 
 export { OverflowProps }
 
+export { OverlayDrawer }
+
+export { overlayDrawerClassNames }
+
+export { OverlayDrawerProps }
+
+export { OverlayDrawerSlots }
+
+export { OverlayDrawerState }
+
 export { PartialTheme }
 
 export { PartitionAvatarGroupItems }
@@ -2079,6 +2527,12 @@ export { PartitionAvatarGroupItems }
 export { partitionAvatarGroupItems }
 
 export { PartitionAvatarGroupItemsOptions }
+
+export { PartitionBreadcrumbItems }
+
+export { partitionBreadcrumbItems }
+
+export { PartitionBreadcrumbItemsOptions }
 
 export { Persona }
 
@@ -2230,6 +2684,14 @@ export { renderAvatarGroupPopover_unstable }
 
 export { renderBadge_unstable }
 
+export { renderBreadcrumb_unstable }
+
+export { renderBreadcrumbButton_unstable }
+
+export { renderBreadcrumbDivider_unstable }
+
+export { renderBreadcrumbItem_unstable }
+
 export { renderButton_unstable }
 
 export { renderCard_unstable }
@@ -2276,6 +2738,18 @@ export { renderDialogTrigger_unstable }
 
 export { renderDivider_unstable }
 
+export { renderDrawer_unstable }
+
+export { renderDrawerBody_unstable }
+
+export { renderDrawerFooter_unstable }
+
+export { renderDrawerHeader_unstable }
+
+export { renderDrawerHeaderNavigation_unstable }
+
+export { renderDrawerHeaderTitle_unstable }
+
 export { renderDropdown_unstable }
 
 export { RendererProvider }
@@ -2288,7 +2762,17 @@ export { renderFluentProvider_unstable }
 
 export { renderImage_unstable }
 
+export { renderInfoLabel_unstable }
+
+export { renderInlineDrawer_unstable }
+
 export { renderInput_unstable }
+
+export { renderInteractionTag_unstable }
+
+export { renderInteractionTagPrimary_unstable }
+
+export { renderInteractionTagSecondary_unstable }
 
 export { renderLabel_unstable }
 
@@ -2322,9 +2806,21 @@ export { renderMenuSplitGroup_unstable }
 
 export { renderMenuTrigger_unstable }
 
+export { renderMessageBar_unstable }
+
+export { renderMessageBarActions_unstable }
+
+export { renderMessageBarBody_unstable }
+
+export { renderMessageBarGroup_unstable }
+
+export { renderMessageBarTitle_unstable }
+
 export { renderOption_unstable }
 
 export { renderOptionGroup_unstable }
+
+export { renderOverlayDrawer_unstable }
 
 export { renderPersona_unstable }
 
@@ -2382,6 +2878,10 @@ export { renderTableSelectionCell_unstable }
 
 export { renderTabList_unstable }
 
+export { renderTag_unstable }
+
+export { renderTagGroup_unstable }
+
 export { renderText_unstable }
 
 export { renderTextarea_unstable }
@@ -2431,6 +2931,14 @@ export { Select }
 export { SelectableHandler }
 
 export { selectClassNames }
+
+export { SelectionHookParams }
+
+export { SelectionItemId }
+
+export { SelectionMethods }
+
+export { SelectionMode_2 as SelectionMode }
 
 export { SelectOnChangeData }
 
@@ -2740,6 +3248,40 @@ export { TabState }
 
 export { TabValue }
 
+export { Tag }
+
+export { TagAppearance }
+
+export { tagClassNames }
+
+export { TagDismissData }
+
+export { TagDismissEvent }
+
+export { TagDismissHandler }
+
+export { TagGroup }
+
+export { tagGroupClassNames }
+
+export { TagGroupProps }
+
+export { TagGroupSlots }
+
+export { TagGroupState }
+
+export { TagProps }
+
+export { TagShape }
+
+export { TagSize }
+
+export { TagSlots }
+
+export { TagState }
+
+export { TagValue }
+
 export { teamsDarkTheme }
 
 export { teamsHighContrastTheme }
@@ -2863,6 +3405,8 @@ export { ToggleButtonProps }
 export { ToggleButtonState }
 
 export { tokens }
+
+export { toMountNodeProps }
 
 export { Toolbar }
 
@@ -3000,6 +3544,10 @@ export { TreeSlots }
 
 export { TreeState }
 
+export { truncateBreadcrumbLongName }
+
+export { truncateBreadcrumLongTooltip }
+
 export { TypographyStyle }
 
 export { TypographyStyles }
@@ -3061,6 +3609,24 @@ export { useAvatarStyles_unstable }
 export { useBadge_unstable }
 
 export { useBadgeStyles_unstable }
+
+export { useBreadcrumb_unstable }
+
+export { useBreadcrumbButton_unstable }
+
+export { useBreadcrumbButtonStyles_unstable }
+
+export { useBreadcrumbContext_unstable }
+
+export { useBreadcrumbDivider_unstable }
+
+export { useBreadcrumbDividerStyles_unstable }
+
+export { useBreadcrumbItem_unstable }
+
+export { useBreadcrumbItemStyles_unstable }
+
+export { useBreadcrumbStyles_unstable }
 
 export { useButton_unstable }
 
@@ -3156,6 +3722,8 @@ export { useDialogSurface_unstable }
 
 export { useDialogSurfaceContext_unstable }
 
+export { useDialogSurfaceContextValues_unstable }
+
 export { useDialogSurfaceStyles_unstable }
 
 export { useDialogTitle_unstable }
@@ -3167,6 +3735,30 @@ export { useDialogTrigger_unstable }
 export { useDivider_unstable }
 
 export { useDividerStyles_unstable }
+
+export { useDrawer_unstable }
+
+export { useDrawerBody_unstable }
+
+export { useDrawerBodyStyles_unstable }
+
+export { useDrawerFooter_unstable }
+
+export { useDrawerFooterStyles_unstable }
+
+export { useDrawerHeader_unstable }
+
+export { useDrawerHeaderNavigation_unstable }
+
+export { useDrawerHeaderNavigationStyles_unstable }
+
+export { useDrawerHeaderStyles_unstable }
+
+export { useDrawerHeaderTitle_unstable }
+
+export { useDrawerHeaderTitleStyles_unstable }
+
+export { useDrawerStyles_unstable }
 
 export { useDropdown_unstable }
 
@@ -3208,6 +3800,8 @@ export { useFocusFinders }
 
 export { useFocusObserved }
 
+export { useFocusVisible }
+
 export { useFocusWithin }
 
 export { useHeadlessFlatTree_unstable }
@@ -3218,9 +3812,31 @@ export { useImage_unstable }
 
 export { useImageStyles_unstable }
 
+export { useInfoLabel_unstable }
+
+export { useInfoLabelStyles_unstable }
+
+export { useInlineDrawer_unstable }
+
+export { useInlineDrawerStyles_unstable }
+
 export { useInput_unstable }
 
 export { useInputStyles_unstable }
+
+export { useInteractionTag_unstable }
+
+export { useInteractionTagContextValues_unstable }
+
+export { useInteractionTagPrimary_unstable }
+
+export { useInteractionTagPrimaryStyles_unstable }
+
+export { useInteractionTagSecondary_unstable }
+
+export { useInteractionTagSecondaryStyles_unstable }
+
+export { useInteractionTagStyles_unstable }
 
 export { useIsInTableHeader }
 
@@ -3314,6 +3930,28 @@ export { useMenuTriggerContext_unstable }
 
 export { useMergedRefs }
 
+export { useMessageBar_unstable }
+
+export { useMessageBarActions_unstable }
+
+export { useMessageBarActionsStyles_unstable }
+
+export { useMessageBarBody_unstable }
+
+export { useMessageBarBodyStyles_unstable }
+
+export { useMessageBarContext }
+
+export { useMessageBarGroup_unstable }
+
+export { useMessageBarGroupStyles_unstable }
+
+export { useMessageBarStyles_unstable }
+
+export { useMessageBarTitle_unstable }
+
+export { useMessageBarTitleStyles_unstable }
+
 export { useModalAttributes }
 
 export { UseModalAttributesOptions }
@@ -3331,6 +3969,12 @@ export { useOptionStyles_unstable }
 export { useOverflowCount }
 
 export { useOverflowMenu }
+
+export { useOverflowVisibility }
+
+export { useOverlayDrawer_unstable }
+
+export { useOverlayDrawerStyles_unstable }
 
 export { usePersona_unstable }
 
@@ -3379,6 +4023,8 @@ export { useRestoreFocusTarget }
 export { useScrollbarWidth }
 
 export { useSelect_unstable }
+
+export { useSelection }
 
 export { useSelectStyles_unstable }
 
@@ -3484,6 +4130,18 @@ export { useTabListStyles_unstable }
 
 export { useTabStyles_unstable }
 
+export { useTag_unstable }
+
+export { useTagAvatarContextValues_unstable }
+
+export { useTagGroup_unstable }
+
+export { useTagGroupContextValues_unstable }
+
+export { useTagGroupStyles_unstable }
+
+export { useTagStyles_unstable }
+
 export { useText_unstable }
 
 export { useTextarea_unstable }
@@ -3577,6 +4235,8 @@ export { useTreeItemPersonaLayoutStyles_unstable }
 export { useTreeItemStyles_unstable }
 
 export { useTreeStyles_unstable }
+
+export { useUncontrolledFocus }
 
 export { VerticalSpacingTokens }
 
